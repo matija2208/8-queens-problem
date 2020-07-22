@@ -1,6 +1,6 @@
-import time
 import pygame as pg
 import pygamebg
+
 n=int(input("Unesite broj n : "))
 Qx=[0]*(n)
 Qy=[0]*(n)
@@ -8,7 +8,7 @@ c=1
 i=0
 j=0
 t=True
-o=0
+
 window=pygamebg.open_window(n*50,n*50,"Tabla")
 def popunjavanje():
     for i in range (0,n):
@@ -38,7 +38,7 @@ def mesto():
             Qx[0]=0
             if Qy[0]==n-1:
                 print("Nema resenja!!!")
-                pg.exit()
+                quit()
             else:
                 Qy[0]+=1
         else:
@@ -81,6 +81,4 @@ Qx[0]=0
 Qy[0]=0
 tekst(Qx[0],Qy[0],(0,255,0))
 
-pygamebg.frame_loop(1000,mesto)
-
-
+pygamebg.frame_loop(n*n,mesto)
