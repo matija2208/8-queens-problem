@@ -5,6 +5,7 @@ Qx=[0]*n
 Qy=[0]*n
 c=(-1)
 bool=True
+
 def trazenje_mogucih_pozicija(): 
 
     global n

@@ -32,8 +32,8 @@ class ispis(object):
     def  obelezavanje(x,y,c):
         global window
         global n
-        step=255/n
-        pe.draw.rect(window,(255,0,0),(x*50,y*50,50,50))
+        step=255//n
+        pe.draw.rect(window,(255-(c*step),0+(c*step),0),(x*50,y*50,50,50))
         
     
     def zavrsi():
