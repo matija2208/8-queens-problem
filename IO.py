@@ -4,10 +4,10 @@ import pygamebg as pg
 n=1
 window=0
 
-
 def unos():
     global n
-    n=int(input("Unesite broj n : "))
+    while n<4:
+        n=int(input("Unesite broj n : "))
     return n
 
 class ispis(object):
