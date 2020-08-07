@@ -1,6 +1,8 @@
 import IO
 
-n=IO.unos()
+
+
+n=IO.gui.inicijalizacija()
 Qx=[0]*n
 Qy=[0]*n
 c=(-1)
@@ -48,6 +50,7 @@ class Algoritam(object):
         global bool
         if bool:
             if c==(-1):
+                IO.inicijalizacija_boja()
                 c=1
                 Qx[0]=0
                 Qy[0]=0
@@ -79,4 +82,5 @@ class Algoritam(object):
 
                 if c==n:
                     print("Resenje je pronadjeno!!!")
+                    IO.fajlovi.brisanje()
                     bool=False
