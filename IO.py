@@ -8,6 +8,7 @@ k=1
 colour=[]
 N=[]
 
+
 class gui(object):
 
     def crtaj():
